@@ -40,6 +40,13 @@ Router.map(function() {
       this.route('chapter3-6');
       this.route('chapter3-7');
       this.route('chapter4-1');
+      this.route('chapter4-2');
+      this.route('chapter4-3');
+      this.route('chapter4-4');
+      this.route('chapter4-5');
+      this.route('chapter4-6');
+      this.route('chapter4-7');
+      this.route('chapter5-1');
     });
   });
 });
