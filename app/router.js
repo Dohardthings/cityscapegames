@@ -47,8 +47,12 @@ Router.map(function() {
       this.route('chapter4-6');
       this.route('chapter4-7');
       this.route('chapter5-1');
+      this.route('chapter5-2', function() {});
+      this.route('epilogue-2');
+      this.route('epilogue-1');
     });
   });
+  this.route('we-will-contact-you');
 });
 
 export default Router;
