@@ -4,6 +4,8 @@ body {
 .home-page-container {
   width:100vw;
 }
+
+/*This is the section you see when you open the page "opening section"*/
 .home-page-h1 {
   color:  #ffffff;
   font-family: 'Oswald', sans-serif;
@@ -12,13 +14,14 @@ body {
   margin-bottom: 5rem;
 }
 
-.section {
+.section-1 {
   width: 100%;
-
 
   background: url('http://i.imgur.com/24VgE9T.jpg')center no-repeat no-repeat;
 
 }
+
+
 .filter {
   background: rgba(0,0,0,0.65);
   display: flex;
@@ -32,7 +35,7 @@ body {
 
 }
 .image-parent {
- max-width: 30%;
+ max-width: 50%;
  min-width: 5rem;
 }
 
@@ -43,4 +46,58 @@ body {
     width: 12rem;
     margin: auto;
     margin-top: 0;
+}
+
+.number {
+  position: relative;
+  bottom: -12px;
+  margin: auto;
+  color: #ffffff;
+  width: 3rem;
+}
+/*end opening section*/
+
+.section-2 {
+  width: 100%;
+  background: #ffffff;
+}
+
+.im-fell-english {
+  font-family: 'Im fell English';
+
+}
+
+.chapter {
+  position: relative;
+  top:-4px;
+  margin: auto;
+  width: 6.5rem;
+  color: #000000;
+}
+
+.description {
+  display: flex;
+  align-content: center;
+  width: 50%;
+  margin-left: 1rem;
+}
+
+.flex-row-container {
+  width: 100%;
+  display:flex;
+}
+.equation-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+.equation-image-parent {
+  width: 70%;
+  margin: auto;
+}
+.equation-symbol-parent {
+  width: 20%;
+  margin: auto;
 }
