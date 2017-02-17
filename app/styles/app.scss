@@ -102,29 +102,30 @@ body {
 
 .description {
   display: flex;
-  align-content: center;
-  width: 50%;
-  margin-left: 1rem;
+
+  width: calc(100% - 1rem - 1rem);
+  margin: 1rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .flex-row-container {
   width: 100%;
   display:flex;
+  flex-direction: column;
 }
 .equation-container {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 100%;
 
 }
 
 .equation-image-parent {
-  width: 70%;
+  width: 25%;
   margin: auto;
 }
 .equation-symbol-parent {
-  width: 20%;
+  width: 10%;
   margin: auto;
 }
 
@@ -168,11 +169,12 @@ body {
 
 .direction {
   width: 100%;
+  margin-bottom: 2rem;
 
 }
 
 .direction-image-parent {
-  width: 70%;
+  width: 50%;
   margin: auto;
 
 }
@@ -183,8 +185,30 @@ body {
   width: 90%;
   margin: auto;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .white {
   color: $brand-white
+}
+
+//  end section-3*******************
+
+
+//  begin section-4******************
+
+.section-4 {
+  width: 100%;
+  background: $brand-black;
+
+}
+
+.where-and-when {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: auto;
+  width: 15.5rem;
+  margin-top: 1rem;
+  color: $brand-white
+
 }
