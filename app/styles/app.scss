@@ -1,3 +1,5 @@
+
+@import 'variables';
 body {
   margin: 0;
 }
@@ -6,18 +8,20 @@ body {
 }
 
 /*This is the section you see when you open the page "opening section"*/
+
 .home-page-h1 {
-  color:  #ffffff;
+  color:  $brand-white;
   font-family: 'Oswald', sans-serif;
   width: 19rem;
   margin-top: .5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .section-1 {
   width: 100%;
 
   background: url('http://i.imgur.com/24VgE9T.jpg')center no-repeat no-repeat;
+  background-size: cover;
 
 }
 
@@ -35,47 +39,65 @@ body {
 
 }
 .image-parent {
- max-width: 50%;
+ max-width: 70%;
  min-width: 5rem;
 }
 
 .cityscape {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  color: #F2D43D;
+  color: $brand-yellow;
     width: 12rem;
     margin: auto;
-    margin-top: 0;
+    position: relative;
+    bottom: 22px;
+
 }
 
 .number {
   position: relative;
   bottom: -12px;
   margin: auto;
-  color: #ffffff;
+  color: $brand-white;
   width: 3rem;
   font-weight: 300;
 }
+
+
 /*end opening section*/
+
+
+// begin section-2 *********
+
+
 
 .section-2 {
   width: 100%;
-  background: #ffffff;
+  background: $brand-white;
 }
 
 .libre-baskerville {
   font-family: 'Libre Baskerville';
 }
+
 .oswald {
-  font-family: 'Oswald';
-  font-weight: light;
+  font-family: 'Oswald', sans-serif;
 }
+
+.what-we-do {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: auto;
+  width: 12.5rem;
+  margin-top: 1rem;
+}
+
 .chapter {
   position: relative;
   top:-2px;
   margin: auto;
   width: 8rem;
-  color: #000000;
+  color: $brand-black;
 }
 
 .description {
@@ -104,4 +126,65 @@ body {
 .equation-symbol-parent {
   width: 20%;
   margin: auto;
+}
+
+// end section-2 **********
+
+
+// begin section-3*********
+
+.section-3 {
+  width: 100%;
+  background: url('http://i.imgur.com/zZfrPTI.jpg')center center no-repeat;
+  background-size: cover;
+
+}
+
+.section-3-number {
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+  color: $brand-white;
+  width: 3rem;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.white-chapter {
+  margin: auto;
+  width: 8rem;
+  color: $brand-white;
+  font-size: 2rem;
+
+}
+
+.how-it-works {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: auto;
+  width: 16.5rem;
+  margin-top: 1rem;
+  color: $brand-white
+}
+
+.direction {
+  width: 100%;
+
+}
+
+.direction-image-parent {
+  width: 70%;
+  margin: auto;
+
+}
+
+.direction-text {
+  display: flex;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.white {
+  color: $brand-white
 }
