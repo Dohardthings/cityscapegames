@@ -54,6 +54,7 @@ body {
   margin: auto;
   color: #ffffff;
   width: 3rem;
+  font-weight: 300;
 }
 /*end opening section*/
 
@@ -62,16 +63,18 @@ body {
   background: #ffffff;
 }
 
-.im-fell-english {
-  font-family: 'Im fell English';
-
+.libre-baskerville {
+  font-family: 'Libre Baskerville';
 }
-
+.oswald {
+  font-family: 'Oswald';
+  font-weight: light;
+}
 .chapter {
   position: relative;
-  top:-4px;
+  top:-2px;
   margin: auto;
-  width: 6.5rem;
+  width: 8rem;
   color: #000000;
 }
 
@@ -80,6 +83,7 @@ body {
   align-content: center;
   width: 50%;
   margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
 .flex-row-container {
