@@ -105,14 +105,14 @@ body {
 
   width: calc(100% - 1rem - 1rem);
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .flex-row-container {
   width: 100%;
   display:flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .equation-container {
   display: flex;
@@ -121,11 +121,11 @@ body {
 }
 
 .equation-image-parent {
-  width: 25%;
+  width: 30%;
   margin: auto;
 }
 .equation-symbol-parent {
-  width: 10%;
+  width: 5%;
   margin: auto;
 }
 
@@ -174,7 +174,7 @@ body {
 }
 
 .direction-image-parent {
-  width: 50%;
+  width: 40%;
   margin: auto;
 
 }
@@ -184,7 +184,7 @@ body {
   align-content: center;
   width: 90%;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -211,4 +211,70 @@ body {
   margin-top: 1rem;
   color: $brand-white
 
+}
+
+.yellow {
+  color: $brand-yellow;
+}
+
+.flex-qa-container {
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+// end section-4 **********************************
+
+
+// Begin section-5  *******************************
+
+.section-5 {
+  width: 100%;
+  background: $brand-white;
+
+}
+
+.who-we-are {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: auto;
+  width: 12.5rem;
+  margin-top: 1rem;
+
+}
+
+.black {
+  color: $brand-black;
+}
+
+
+.profile-container {
+  width: 100%;
+}
+.profile-image-parent {
+  width: 20rem;
+  min-width: 5rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.make-dimentions-match {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-weight: 350;
+  margin: auto;
+  margin-top: 1rem;
+  width: 17.16rem;
+  position: relative;
+  bottom: 27px;
 }
