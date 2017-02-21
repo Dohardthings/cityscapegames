@@ -39,8 +39,9 @@ body {
 
 }
 .image-parent {
- max-width: 70%;
- min-width: 5rem;
+
+ max-width: 30rem;
+ min-width: 15rem;
 }
 
 .cityscape {
@@ -52,6 +53,13 @@ body {
     position: relative;
     bottom: 22px;
 
+}
+
+@media screen and (min-width: 760px) {
+  .cityscape {
+    font-size: 5rem;
+    width: 20rem;
+  }
 }
 
 .number {
@@ -76,6 +84,10 @@ body {
   background: $brand-white;
 }
 
+.im-fell-english {
+  font-family: 'Im fell English';
+}
+
 .libre-baskerville {
   font-family: 'Libre Baskerville';
 }
@@ -89,7 +101,10 @@ body {
   font-weight: lighter;
   margin: auto;
   width: 12.5rem;
-  margin-top: 1rem;
+  position: relative;
+  top: -15px;
+  margin-top: 0;
+
 }
 
 .chapter {
@@ -103,7 +118,7 @@ body {
 .description {
   display: flex;
 
-  width: calc(100% - 1rem - 1rem);
+  justify-content: center;
   margin: 1rem;
   font-size: 1.2rem;
   text-align: center;
@@ -119,11 +134,23 @@ body {
   width: 100%;
 
 }
-
 .equation-image-parent {
   width: 30%;
   margin: auto;
 }
+@media screen and (min-width: 760px) {
+  .equation-container {
+    margin: auto;
+    width: 70%;
+  }
+
+  .equation-image-parent {
+    width: 20%;
+  }
+}
+
+
+
 .equation-symbol-parent {
   width: 5%;
   margin: auto;
@@ -159,12 +186,14 @@ body {
 }
 
 .how-it-works {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: lighter;
   margin: auto;
-  width: 16.5rem;
-  margin-top: 1rem;
-  color: $brand-white
+  width: 15rem;
+  margin-top: 0;
+  color: $brand-white;
+
+
 }
 
 .direction {
@@ -178,11 +207,16 @@ body {
   margin: auto;
 
 }
+@media screen and (min-width: 760px) {
+  .direction-image-parent {
+    width: 15%;
+  }
+  }
+
 
 .direction-text {
   display: flex;
-  align-content: center;
-  width: 90%;
+  justify-content: center;
   margin: auto;
   font-size: 1.2rem;
   text-align: center;
@@ -200,15 +234,14 @@ body {
 .section-4 {
   width: 100%;
   background: $brand-black;
-
 }
 
 .where-and-when {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: lighter;
   margin: auto;
-  width: 15.5rem;
-  margin-top: 1rem;
+  width: 13.8rem;
+  margin-top: 0;
   color: $brand-white
 
 }
@@ -224,6 +257,13 @@ body {
   margin: auto;
 }
 
+
+.skyline {
+  width: 100%;
+  margin: auto;
+
+}
+
 // end section-4 **********************************
 
 
@@ -236,11 +276,11 @@ body {
 }
 
 .who-we-are {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: lighter;
   margin: auto;
-  width: 12.5rem;
-  margin-top: 1rem;
+  width: 11.3rem;
+  margin-top: 0;
 
 }
 
@@ -277,4 +317,124 @@ body {
   width: 17.16rem;
   position: relative;
   bottom: 27px;
+}
+
+// end section-5 ************************
+
+
+//  begin section-6 *****************************
+
+.section-6 {
+  width: 100%;
+  background: url('http://i.imgur.com/gP49p4w.jpg')center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.why-wait {
+  font-size: 2.75rem;
+  font-weight: lighter;
+  margin: auto;
+  width: 10.1rem;
+  margin-top: 0;
+
+}
+
+.idol-parent {
+  display: flex;
+  margin: auto;
+  min-height: 15rem;
+  width: 15rem;
+  background: url('http://i.imgur.com/AeYF3ab.png')center center no-repeat;
+  background-size: cover;
+}
+
+.register-text {
+  font-weight: bold;
+      font-size: 3rem;
+      margin: auto;
+      filter: drop-shadow(0px 0px 5px black);
+      text-shadow: grey 2px 2px;
+      position: relative;
+      top: 26px;
+}
+
+.adventure-title-parent {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.small {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.medium-2 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+.medium {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.big {
+  font-size: 3.8rem;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.adventure-blurb {
+  width: 90%;
+  text-align: center;
+}
+
+.link-to {
+  text-decoration: none;
+  margin: 3rem;
+  width: 50%;
+  padding: 2rem;
+}
+
+.city-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.back-button {
+  border-radius: 20%;
+  background: $brand-yellow;
+  color: $brand-white;
+}
+
+.back-button-text {
+  padding: 1rem;
+}
+
+.city-link {
+  transition:all .5s ease;
+  outline:none;
+  box-shadow: 5px 38px 34px -26px $brand-white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 7px $brand-yellow;
+  &:hover{
+         box-shadow:2px 8px 4px -6px $brand-white;
+      }
+}
+a {
+  margin: 0;
+}
+ .full-page {
+   min-height: 100vw;
+ }
+
+.nashville {
+  background: url('http://www.blacklightslide.com/wp-content/uploads/2016/10/nashvillelarge.jpg')center center no-repeat;
+  background-size: cover;
+  text-shadow: black 2px 2px;
 }
