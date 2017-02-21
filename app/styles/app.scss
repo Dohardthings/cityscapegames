@@ -399,22 +399,31 @@ body {
   margin: 3rem;
   width: 50%;
   padding: 2rem;
+  font-size: 3rem;
 }
 
-.city-nav {
-  display: flex;
-  justify-content: space-around;
+@media screen and (max-width: 760px) {
+  .link-to {
+  font-size: 1.5rem;
 }
+}
+
+
 
 .back-button {
   border-radius: 20%;
   background: $brand-yellow;
-  color: $brand-white;
+  color: $brand-black;
+  width: 5rem;
+  margin-top: 1.5rem;
+  padding: .4rem;
+  font-size: 1.2rem;
+
+  &:hover {
+    text-shadow: white 1px 1px;
+  }
 }
 
-.back-button-text {
-  padding: 1rem;
-}
 
 .city-link {
   transition:all .5s ease;
@@ -426,15 +435,21 @@ body {
          box-shadow:2px 8px 4px -6px $brand-white;
       }
 }
-a {
-  margin: 0;
-}
+
+
+
  .full-page {
    min-height: 100vw;
  }
 
 .nashville {
   background: url('http://www.blacklightslide.com/wp-content/uploads/2016/10/nashvillelarge.jpg')center center no-repeat;
+  background-size: cover;
+  text-shadow: black 2px 2px;
+}
+
+.goonies-map {
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/ce/d1/60/ced1606db67afeafd08f56e87c984d85.jpg')center center no-repeat;
   background-size: cover;
   text-shadow: black 2px 2px;
 }

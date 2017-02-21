@@ -1,17 +1,17 @@
 <div class="section-1 full-page">
   <div class="filter full-page">
-    <div class="city-nav">
-      <div class="back-button"><p class="libre-baskerville back-button-text">Back</p></div>
+
     <p class="oswald yellow medium center">Choose Your Location</p>
+    {{#link-to 'index'}}<button class="back-button oswald">Back</button>{{/link-to}}
 
-    </div>
-    {{#link-to 'nashville-adventures' class='link-to city-link center nashville'}} <p class="libre-baskerville medium white nodecoration">Nashville, TN</p> {{/link-to}}
 
+    {{#link-to 'nashville-adventures' class='link-to city-link center nashville white libre-baskerville'}} Nashville, TN {{/link-to}}
+     <div class="city-link link-to goonies-map"><p class="oswald center white">More Cities Coming!</p></div>
   </div>
 </div>
 
 
 
 
-{{#link-to 'index'}} <h3>take me back to index</h3>{{/link-to}}
+
 {{outlet}}
