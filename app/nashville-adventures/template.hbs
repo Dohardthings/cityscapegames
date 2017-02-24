@@ -1,11 +1,27 @@
-<h1>this is a list of all the adventures we currently offer in nashville</h1>
-<ul>
-  <li>
-    {{#link-to 'knights-of-infernal-order.paywall'}}
-    <h3>Knights of the infernal order</h3>
-    <p>brief description of what it is about, and how long it will take on average, and weather you need to drive</p>
-    <button>purchase button</button>
-    {{/link-to}}
-  </li>
-</ul>
+<div class="section-1 full-page">
+  <div class="filter full-page">
+    <p class="oswald yellow medium center">Adventures to Challenge and Excite!</p>
+
+    <ul>
+      <li>
+
+        {{#link-to 'knights-of-infernal-order.paywall' class='link-to'}}
+        <p class="medium white im-fell-english center hover-shadow">Knights of the Infernal Order</p>
+        <p class="smaller center white oswald">Search Nashville for clues to it's past to solve a mystery that has endured since the Civil War,
+          and delve into the mysteries of it's secret societies!</p>
+        <p class="very-small white oswald center">Will I need to drive anywhere? yes</p>
+        <p class="very-small white oswald center">Expected time to complete: 4 hours</p>
+
+        {{/link-to}}
+        {{#link-to 'knights-of-infernal-order.paywall' class='div-center'}}
+        <button class="back-button oswald">Buy Now</button>
+        {{/link-to}}
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+
 {{outlet}}
