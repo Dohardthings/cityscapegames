@@ -1,0 +1,64 @@
+.chapter-wrapper {
+  font-family: "Im fell English";
+  font-size: 18px;
+}
+
+.knights {
+  font-size: 5rem;
+}
+
+.infernal {
+  font-size: 4.25rem;
+}
+
+.order {
+  font-size: 6.25rem;
+}
+
+
+
+h3 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.east-park {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  position: absolute;
+  transition: .5s 0s ease;
+}
+
+.top:hover {
+  opacity: 0;
+}
+
+.btn {
+  color: black;
+  font-size: 3rem;
+  background-image:linear-gradient(120deg, gold, white, gold, gold);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-image:linear-gradient(120deg, gold, gold, white, gold);
+}
+
+.good-decision {
+  padding: 10px 75px;
+  margin-top: 50px;
+}
+
+.trove {
+  padding: 10px 75px;
+  margin-top: 75px;
+}
+
+.oath {
+  font-weight: bold;
+  font-style: italic;
+}
