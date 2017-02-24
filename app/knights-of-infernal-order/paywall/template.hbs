@@ -1,7 +1,14 @@
-<h3>this is the paywall page for KIO</h3>
-{{#link-to 'knights-of-infernal-order.TermsConditions'}}
-<h3>Pay the money and send me to terms and conditions</h3>
-{{/link-to}}
+<div class="section-1 full-page">
+  <div class="filter full-page">
+    <p class="oswald yellow small center width90">Two Ways to Pay</p>
 
+    <div class="stripe-parent">stripe div</div>
 
-{{outlet}}
+    <div class="paypal-parent">paypal div</div>
+
+    {{#link-to 'knights-of-infernal-order.TermsConditions' class='link-to white center'}}
+    <h3>Pay the money and send me to terms and conditions</h3>
+    {{/link-to}}
+    {{outlet}}
+  </div>
+</div>
