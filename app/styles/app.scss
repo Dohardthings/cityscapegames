@@ -1,6 +1,10 @@
 @import 'chapter';
 @import 'decodex';
 @import 'variables';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+
 body {
   margin: 0;
 }

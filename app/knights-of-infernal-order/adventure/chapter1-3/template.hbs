@@ -1,6 +1,45 @@
-<h2>this is chapter 1-3</h2>
-{{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <p>to chapter1-4</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter1-2'}} <p>back to previous page</p> {{/link-to}}
+<div class="section-2 center chapter-wrapper">
+
+  <div class="profile-image-parent">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      Unfortunately, little else can be gleaned from this priceless artifact at the moment. The rest of the testimony is still illegible due to the peculiar cipher used to protect the information locked inside of its pages.
+
+    </p>
+
+    <p class="left">
+      In the meantime, please do your best to investigate the location of this meeting place. Use any means necessary! Our allies are working diligently to tease more clues from this ingenious cryptogram. Please hurry! With a nefarious agent lurking around,
+      we must assume that the Order is receiving this same information. As soon as you believe you have found the correct address, enter it below.
+    </p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+  <button class="btn"{{action "toggleModal"}}>Hint 1</button>
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #1
+  {{/modal-dialog}}
+{{/if}}
+
+  <div class="link-to-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <button type="button" name="button" class="btn margin-bottom-1">Decodex</button> {{/link-to}}
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-2'}} <button type="button" name="button" class="btn">Back</button> {{/link-to}}
+  </div>
+  </div>
 
 
 {{outlet}}
+{{ember-modals}}
