@@ -23,8 +23,11 @@
     </p>
 
   </div>
-
-  <button class="btn"{{action "toggleModal"}}>Hint 1</button>
+<div class="button-wrapper">
+  <button class="btn-silver"{{action "toggleModal"}}>Hint 1</button>
+  <button class="btn-silver"{{action "toggleModal2"}}>Hint 2</button>
+  <button class="btn-silver"{{action "toggleModal2"}}>Hint 3</button>
+</div>
 
 {{#if isShowingModal}}
   {{#modal-dialog close="toggleModal"
@@ -33,6 +36,23 @@
     Here is the text for hint #1
   {{/modal-dialog}}
 {{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #2
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #3
+  {{/modal-dialog}}
+{{/if}}
+
 
   <div class="link-to-wrapper">
     {{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <button type="button" name="button" class="btn margin-bottom-1">Decodex</button> {{/link-to}}
