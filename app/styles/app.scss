@@ -1,4 +1,5 @@
 @import 'chapter';
+@import 'decodex';
 @import 'variables';
 body {
   margin: 0;
@@ -543,4 +544,38 @@ width: 90%;
 }
 .auto-margin {
   margin: auto;
+}
+
+// End Rules *********************************
+//
+// BEGIN CHAPTERS******************************
+
+.link-to-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lime {
+  color: lime;
+}
+.next {
+  width: 24%;
+  margin:auto;
+  font-size: 3rem;
+}
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.next-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.decodex-back {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }

@@ -6,7 +6,7 @@
   text-shadow: lime 0 0 10px;
 }
 
-.p1, footer p {
+.p1, .p3 {
   margin-top: .75rem;
   background-color: lime;
   color: black;
@@ -17,20 +17,26 @@
 
 .p2 {
   animation: type 2s steps(20);
+  font-family: VT323;
+
 }
 
-span {
+.decodex-span {
   animation: blink 1s infinite;
 }
 
-a {
-  padding: .5rem;
+.decodex-link-to {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 80%;
   border: lime 2px solid;
   color: lime;
   font-size: 5rem;
+  text-decoration: none;
+
 }
 
-a:hover {
+.decodex-link-to:hover {
   background-color: lime;
   color: black;
   box-shadow: lime 0 0 15px;
@@ -58,7 +64,7 @@ a:hover {
   0% {
     opacity: .7;
     transform: scale(1.005);
-    transform: translateY(1px)
+    transform: translateY(1px);
     box-shadow: inset lime 0px 0px 20px;
   }
 
