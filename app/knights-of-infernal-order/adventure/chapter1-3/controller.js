@@ -21,10 +21,10 @@ export default Ember.Controller.extend({
       if (check){
       console.log("woohoo!");
       this.transitionToRoute('knights-of-infernal-order.adventure.chapter1-4');
-      };
+      }
       if (!check){
         console.log("fuuuuck!");
-        window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!")
+        window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!");
 
       };
 

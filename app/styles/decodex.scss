@@ -46,7 +46,6 @@
 
 .book {
   animation: glitch .125s 0s infinite ease alternate-reverse;
-  box-shadow: lime 0 0 15px;
 }
 
 @keyframes type {
@@ -65,7 +64,6 @@
     opacity: .7;
     transform: scale(1.005);
     transform: translateY(1px);
-    box-shadow: inset lime 0px 0px 20px;
   }
 
   25% {

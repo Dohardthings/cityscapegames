@@ -597,3 +597,18 @@ width: 90%;
   margin-bottom: 1rem;
 
 }
+.quiz-box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.quiz-input {
+width: 70%;
+margin: auto;
+font-size: 2rem;
+margin-bottom: 1rem;
+border: black solid 1px;
+}
