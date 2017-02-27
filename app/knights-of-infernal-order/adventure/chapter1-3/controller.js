@@ -14,5 +14,21 @@ export default Ember.Controller.extend({
     toggleModal3: function() {
       this.toggleProperty('isShowingModal3');
     },
+    check: function(){
+      var value = document.getElementById('input1').value;
+      var check = /(166)|(2nd)/g.test(value);
+      //check will be true or false
+      if (check){
+      console.log("woohoo!");
+      this.transitionToRoute('knights-of-infernal-order.adventure.chapter1-4');
+      };
+      if (!check){
+        console.log("fuuuuck!");
+        window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!")
+
+      };
+
+
+    }
   }
 });

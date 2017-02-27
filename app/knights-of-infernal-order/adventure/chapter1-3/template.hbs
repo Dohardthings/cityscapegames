@@ -23,6 +23,14 @@
     </p>
 
   </div>
+
+  <form class="quiz-box" {{action "check" on="submit"}}>
+    <input id="input1" class="quiz-input" type="text">
+    <button class="btn">Check Answer</button>
+  </form>
+
+
+
 <div class="button-wrapper">
   <button class="btn-silver"{{action "toggleModal"}}>Hint 1</button>
   <button class="btn-silver"{{action "toggleModal2"}}>Hint 2</button>
@@ -54,8 +62,9 @@
 {{/if}}
 
 
+
   <div class="link-to-wrapper">
-    {{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <button type="button" name="button" class="btn margin-bottom-1">Decodex</button> {{/link-to}}
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <button type="button" name="button" class="btn margin-bottom-1">fwd</button> {{/link-to}}
     {{#link-to 'knights-of-infernal-order.adventure.chapter1-2'}} <button type="button" name="button" class="btn">Back</button> {{/link-to}}
   </div>
   </div>
