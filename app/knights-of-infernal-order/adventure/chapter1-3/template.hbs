@@ -24,18 +24,18 @@
 
   </div>
 
+
   <form class="quiz-box" {{action "check" on="submit"}} >
     <input id="input1" class="quiz-input" type="text" placeholder="Enter Address">
     <button class="btn">Submit</button>
   </form>
 
 
+  <div class="icon-wrapper" {{action "toggleModal4"}}>
+    {{fa-icon "fa-question-circle" class= "big"}}
+  </div>
 
-<div class="button-wrapper">
-  <button class="btn-silver"{{action "toggleModal"}}>Hint 1</button>
-  <button class="btn-silver"{{action "toggleModal2"}}>Hint 2</button>
-  <button class="btn-silver"{{action "toggleModal3"}}>Hint 3</button>
-</div>
+
 
 {{#if isShowingModal}}
   {{#modal-dialog close="toggleModal"
@@ -63,9 +63,11 @@
 
 
 
-  <div class="link-to-wrapper">
-    {{#link-to 'knights-of-infernal-order.adventure.chapter1-4'}} <button type="button" name="button" class="btn margin-bottom-1">fwd</button> {{/link-to}}
-    {{#link-to 'knights-of-infernal-order.adventure.chapter1-2'}} <button type="button" name="button" class="btn">Back</button> {{/link-to}}
+  <div class="forward-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-2' class="forward"}} {{fa-icon "fa-caret-left" class= "bigger black"}} {{/link-to}}
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-4' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+ {{/link-to}}
+
   </div>
   </div>
 

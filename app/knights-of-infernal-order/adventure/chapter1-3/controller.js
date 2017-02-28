@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  initial: localStorage.setItem('clicks', '0'),
   isShowingModal: false,
   isShowingModal2: false,
   isShowingModal3: false,
@@ -14,6 +15,21 @@ export default Ember.Controller.extend({
     toggleModal3: function() {
       this.toggleProperty('isShowingModal3');
     },
+
+    toggleModal4: function() {
+      if(localStorage.getItem('clicks') === '0') {
+        this.toggleProperty('isShowingModal');
+        return localStorage.setItem('clicks', '1');
+      }
+      if(localStorage.getItem('clicks') === '1'){
+        this.toggleProperty('isShowingModal2')
+        return localStorage.setItem('clicks', '2');
+      }
+      if(localStorage.getItem('clicks') >= '2') {
+        return this.toggleProperty('isShowingModal3')
+      }
+    },
+
     check: function(){
       var value = document.getElementById('input1').value;
       var check = /(166)|(2nd)/g.test(value);
@@ -29,6 +45,6 @@ export default Ember.Controller.extend({
       };
 
 
-    }
+    },
   }
 });

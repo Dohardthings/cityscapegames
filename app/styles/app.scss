@@ -431,6 +431,10 @@ width: 90%;
   margin: 0;
 }
 
+.bigger {
+  font-size: 4.5rem;
+}
+
 .center {
   text-align: center;
 }
@@ -611,4 +615,16 @@ margin: auto;
 font-size: 2rem;
 margin-bottom: 1rem;
 border: black solid 1px;
+}
+
+.forward-wrapper {
+  display: flex;
+}
+
+.forward {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
