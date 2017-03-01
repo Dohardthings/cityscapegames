@@ -1,6 +1,81 @@
+<div class="section-2 center chapter-wrapper">
 
-<h2>this is chapter 1-7</h2>
-{{#link-to 'knights-of-infernal-order.adventure.chapter2-1'}} <p>to chapter2-1</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter1-6'}} <p>back to previous page</p> {{/link-to}}
+  <div class="profile-image-parent">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      Unfortunately, little else can be gleaned from this priceless artifact at the moment. The rest of the testimony is still illegible due to the peculiar cipher used to protect the information locked inside of its pages.
+
+    </p>
+
+    <p class="left">
+      In the meantime, please do your best to investigate the location of this meeting place. Use any means necessary! Our allies are working diligently to tease more clues from this ingenious cryptogram. Please hurry! With a nefarious agent lurking around,
+      we must assume that the Order is receiving this same information. As soon as you believe you have found the correct address, enter it below.
+    </p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input3" class="quiz-input oswald" type="text" placeholder="Enter Answer">
+    <button class="btn oswald">Submit</button>
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #7
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #8
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #9
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  <div class="forward-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter1-6'}}
+    <button class="btn-question medium white center oswald">Back</button>
+
+     {{/link-to}}
+
+    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+  </div>
+  {{#link-to 'knights-of-infernal-order.adventure.chapter2-1' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
 
 {{outlet}}
+{{ember-modals}}

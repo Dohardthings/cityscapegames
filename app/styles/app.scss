@@ -432,7 +432,7 @@ width: 90%;
 }
 
 .bigger {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 
 .center {
@@ -619,10 +619,11 @@ border: black solid 1px;
 
 .forward-wrapper {
   display: flex;
+  justify-content: space-around;
 }
 
 .forward {
-  width: 50%;
+  width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
