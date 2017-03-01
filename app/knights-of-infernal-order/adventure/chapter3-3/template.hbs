@@ -1,5 +1,83 @@
-<h2>this is chapter 3-3</h2>
-{{#link-to 'knights-of-infernal-order.adventure.chapter3-4'}} <p>to chapter3-4</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter3-2'}} <p>back to previous page</p> {{/link-to}}
+<div class="section-2 center chapter-wrapper">
+
+  <div class="profile-image-parent">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      Regrettably our researcher have not been able to find
+                anything of merit on "Centre Star". Not being familiar
+                with the area creates many obstacles for our team. Maybe
+                you will have better luck finding a lead to follow.
+                Please, research the solution to Eastman’s  coded message
+                further. If you feel you have found the location the
+                journal speaks of, enter the address below.
+    </p>
+
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input7" class="quiz-input oswald" type="text" placeholder="Enter Address">
+    <button class="btn oswald">Submit</button>
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #10
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #11
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #12
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  <div class="forward-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter3-2'}}
+    <button class="btn-question medium white center oswald">Back</button>
+
+     {{/link-to}}
+
+    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+  </div>
+  {{#link-to 'knights-of-infernal-order.adventure.chapter3-4' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
 
 {{outlet}}
+{{ember-modals}}

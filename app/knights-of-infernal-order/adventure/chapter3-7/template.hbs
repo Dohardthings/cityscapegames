@@ -1,5 +1,98 @@
-<h2>this is chapter 3-7</h2>
-{{#link-to 'knights-of-infernal-order.adventure.chapter4-1'}} <p>to chapter4-1</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter3-6'}} <p>back to previous page</p> {{/link-to}}
+<div class="section-2 center chapter-wrapper">
+
+  <div class="profile-image-parent">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      We are quite confident that the missing
+                memorial to A.L.P. Green is how the Captain
+                was guiding Mr. Woodson to the final temple.
+                Unfortunately, we are unable to corroborate
+                this evidence. The part of the blasted diary
+                that held Green and Eastman’s new key has
+                deteriorated to such a condition that it
+                cannot be read! However, we must not give
+                up!
+    </p>
+    <p class="left">If we are to assume that this is the
+                Temple of the Flame Upon the Cross, then logic
+                would dictate that  the mysterious new resident
+                seen confiding with Reverend Green and his son
+                must be one of our agents or their lieutenant.
+                Your GPS locator shows that you are less than a
+                mile south of the town.</p>
+    <p class="left">Please my friend, search the tiny hamlet
+                for any sign of the captured Mr. Hill or the
+                escaped Mr. Woodson and Howard. Any marker that
+                might guide us in our journey! When you believe
+                you have uncovered our next location please
+                enter it below.</p>
+
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input9" class="quiz-input oswald" type="text" placeholder="Enter Answer">
+    <button class="btn oswald">Submit</button>
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #7
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #8
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #9
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  <div class="forward-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter3-6'}}
+    <button class="btn-question medium white center oswald">Back</button>
+
+     {{/link-to}}
+
+    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+  </div>
+  {{#link-to 'knights-of-infernal-order.adventure.chapter4-1' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
 
 {{outlet}}
+{{ember-modals}}
