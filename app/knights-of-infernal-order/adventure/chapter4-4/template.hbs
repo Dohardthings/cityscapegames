@@ -1,5 +1,89 @@
-<h2>this is chapter 4-4</h2>
-{{#link-to 'knights-of-infernal-order.adventure.chapter4-5'}} <p>to chapter4-5</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter4-3'}} <p>back to previous page</p> {{/link-to}}
+<div class="section-2 center chapter-wrapper">
+
+  <div class="profile-image-parent">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      Wonderful work! According to noted
+                western historians the home at Fatherland
+                street housed Jesse James from shortly after the
+                Northfield Bank robbery until March 25, 1881,
+                the day after Bill Ryan was captured at
+                Earthman's Saloon in the White's Creek area. He
+                then fled to Saint Joseph.  During this period
+                Jesse used the name J.D. Howard. Which means our
+                Mr. Woodson must have been his brother Frank
+                James. We must visit the James house. Who knows
+                what we may uncover. When you arrive please
+                enter the color of the next residence to the
+                left below.
+    </p>
+
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input11" class="quiz-input oswald" type="text" placeholder="Enter Color">
+    <button class="btn oswald">Submit</button>
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #4
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #5
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Here is the text for hint #6
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  <div class="forward-wrapper">
+    {{#link-to 'knights-of-infernal-order.adventure.chapter4-3'}}
+    <button class="btn-question medium white center oswald">Back</button>
+
+     {{/link-to}}
+
+    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+  </div>
+  {{#link-to 'knights-of-infernal-order.adventure.chapter4-5' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
 
 {{outlet}}
+{{ember-modals}}
