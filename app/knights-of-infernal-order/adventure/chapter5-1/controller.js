@@ -31,12 +31,12 @@ export default Ember.Controller.extend({
     },
 
     check: function(){
-      var value = document.getElementById('input9').value;
-      var check = /(Edgefield)|(edgefield)/g.test(value);
+      var value = document.getElementById('input13').value;
+      var check = /(tulip)|(Tulip)/g.test(value);
       //check will be true or false
       if (check){
       console.log("woohoo!");
-      this.transitionToRoute('knights-of-infernal-order.adventure.chapter4-1');
+      this.transitionToRoute('knights-of-infernal-order.adventure.chapter5-2');
       }
       if (!check){
         console.log("fuuuuck!");

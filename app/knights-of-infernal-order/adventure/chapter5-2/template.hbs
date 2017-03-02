@@ -1,6 +1,22 @@
-<h2>this is chapter 5-2</h2>
-{{#link-to 'knights-of-infernal-order.adventure.epilogue-1'}} <p>to the good ending</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.epilogue-2'}} <p>to the bad ending</p> {{/link-to}}
-{{#link-to 'knights-of-infernal-order.adventure.chapter5-1'}} <p>back to previous page</p> {{/link-to}}
+<div class="section-2 center chapter-wrapper">
 
+<div class="profile-image-parent">
+  <img class="image" src="/img/swirly.png" alt="">
+</div>
+<div class="list-div auto-margin">
+  <h1>I choose the...</h1>
+
+</div>
+
+
+<div class="link-to-wrapper">
+{{#link-to 'knights-of-infernal-order.adventure.epilogue-1'}} <button type="button" name="button" class="btn margin-bottom-1">The Order</button> {{/link-to}}
+{{#link-to 'knights-of-infernal-order.adventure.epilogue-2'}} <button type="button" name="button" class="btn margin-bottom-1">The Trove</button> {{/link-to}}
+
+</div>
+{{#link-to 'knights-of-infernal-order.adventure.chapter5-1'}}
+<button class="btn-question medium white center oswald">Back</button>
+
+ {{/link-to}}
+</div>
 {{outlet}}
