@@ -12,24 +12,7 @@ body {
   width:100vw;
 }
 
-ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-ol {
-  // width: 100%;
-  // display: flex;
-  // flex-direction: column;
-}
-
-li {
-display:flex;
-flex-direction: column;
-width: 90%;
-
-}
 
 .link-to {
   text-decoration: none;
@@ -53,11 +36,7 @@ width: 90%;
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 760px) {
-  .home-page-h1 {
-    width: 19rem;
-  }
-}
+
 
 .section-1 {
   width: 100%;
@@ -93,8 +72,8 @@ width: 90%;
   color: $brand-yellow;
     width: 12rem;
     margin: auto;
-    position: relative;
-    bottom: 22px;
+    // position: relative;
+    // bottom: 22px;
 
 }
 
@@ -103,17 +82,25 @@ width: 90%;
     font-size: 5rem;
     width: 20rem;
   }
+
 }
 
 .number {
-  position: relative;
-  bottom: -12px;
   margin: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
   color: $brand-white;
-  width: 3.5%;
+  width: 2.75rem;
   font-weight: 300;
 }
 
+@media screen and (min-width: 760px) {
+  .number {
+    font-size: 5rem;
+    max-width: 4.5rem;
+  }
+
+}
 
 /*end opening section*/
 
@@ -154,7 +141,7 @@ width: 90%;
   position: relative;
   top:-2px;
   margin: auto;
-  width: 8rem;
+  width: 14rem;
   color: $brand-black;
 }
 
@@ -263,6 +250,7 @@ width: 90%;
   margin: auto;
   font-size: 1.2rem;
   text-align: center;
+  width:90%;
 }
 
 .white {
@@ -358,8 +346,8 @@ width: 90%;
   margin: auto;
   margin-top: 1rem;
   width: 17.16rem;
-  position: relative;
-  bottom: 27px;
+  // position: relative;
+  // bottom: 27px;
 }
 
 // end section-5 ************************
@@ -449,6 +437,7 @@ width: 90%;
 .adventure-blurb {
   width: 90%;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 
@@ -457,7 +446,9 @@ width: 90%;
 // extra stuff for cities page****************************************
 
 
-
+.90 {
+  min-width: 90%;
+}
 
 
 .back-button {
@@ -484,6 +475,7 @@ width: 90%;
   // border:solid 7px $brand-yellow;
   &:hover{
          box-shadow:2px 8px 4px -6px $brand-white;
+         color: $brand-white;
       }
 }
 
@@ -665,4 +657,8 @@ border: black solid 1px;
 
 .seconds {
   font-size: 5rem;
+}
+
+.bottom-pad {
+  padding-bottom: 2rem;
 }
