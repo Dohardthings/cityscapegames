@@ -1,16 +1,7 @@
 import Ember from 'ember';
-export default Ember.Controller.extend({
 
-  init: function () {
-      this._super();
-      Ember.run.schedule("afterRender",this,function() {
-        this.send("foo");
-      });
-    },
 
-actions:{
-
-   foo: function getMeATimer(){
+export default Ember.Component.extend({
 
   function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
@@ -58,8 +49,5 @@ actions:{
   }
   function init() {
     setTimeout(changeColor, 14400000);
-  }
-
-}
 }
 });

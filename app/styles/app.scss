@@ -630,3 +630,33 @@ border: black solid 1px;
   align-items: center;
   text-decoration: none;
 }
+#clockdiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background: #50AE55;
+  border-radius: .2rem;
+  padding: 1rem;
+  color: black;
+}
+
+
+.hours {
+  font-size: 5rem;
+}
+
+.smalltext {
+  font-size: 2rem;
+}
+
+.minutes {
+  font-size: 5rem;
+}
+
+.smalltext {
+  font-size: 2rem;
+}
+
+.seconds {
+  font-size: 5rem;
+}
