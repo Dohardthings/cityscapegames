@@ -47,7 +47,28 @@ actions:{
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    if (localStorage.getItem('deadline')){
+      var deadline = localStorage.getItem('deadline');
+      initializeClock('clockdiv', deadline);
+      var text = document.getElementById('clockdiv');
+      text.addEventListener("load", init(), false);
+
+      function changeColor() {
+          text.style.background = "#F00";
+      }
+
+      function init() {
+        setTimeout(changeColor, 14400000);
+      }
+
+    }
+
+   if (!localStorage.getItem('deadline')) {
+     var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+     deadline = localStorage.setItem('deadline', deadline);
+
+
+
   initializeClock('clockdiv', deadline);
 
   var text = document.getElementById('clockdiv');
@@ -59,7 +80,7 @@ actions:{
   function init() {
     setTimeout(changeColor, 14400000);
   }
-
+}
 }
 }
 });
