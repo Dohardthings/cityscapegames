@@ -90,14 +90,14 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   color: $brand-white;
-  width: 2.75rem;
+
   font-weight: 300;
 }
 
 @media screen and (min-width: 760px) {
   .number {
     font-size: 5rem;
-    max-width: 4.5rem;
+
   }
 
 }
@@ -143,6 +143,7 @@ body {
   margin: auto;
   width: 14rem;
   color: $brand-black;
+  font-size: 2rem;
 }
 
 .description {
@@ -202,9 +203,17 @@ body {
   font-family: 'Oswald', sans-serif;
   margin: auto;
   color: $brand-white;
-  width: 3rem;
+
   font-weight: 300;
   font-size: 3rem;
+}
+
+@media screen and (min-width: 760px) {
+  .section-3-number {
+    font-size: 5rem;
+
+  }
+
 }
 
 .white-chapter {
