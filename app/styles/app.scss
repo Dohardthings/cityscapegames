@@ -643,31 +643,32 @@ border: black solid 1px;
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background: #50AE55;
-  border-radius: .2rem;
+  background: $brand-white;
+
   padding: 1rem;
-  color: black;
+  color: $brand-black;
+  font-family: 'Im Fell English';
 }
 
 
 .hours {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .smalltext {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .minutes {
-  font-size: 5rem;
-}
-
-.smalltext {
   font-size: 2rem;
 }
 
+.smalltext {
+  font-size: 1rem;
+}
+
 .seconds {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .bottom-pad {
