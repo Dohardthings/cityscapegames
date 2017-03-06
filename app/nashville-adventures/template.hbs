@@ -5,7 +5,7 @@
 
 
 <div class="link-to-wrapper width90">
-        {{#link-to 'knights-of-infernal-order.paywall' class='link-to'}}
+
         <p class="medium white im-fell-english center hover-shadow">Knights of the Infernal Order</p>
         <div class="profile-image-parent">
         <img class="image" src="img/kgc.jpg" alt="">
@@ -16,11 +16,22 @@
         <p class="small white oswald center margin-bottom-1">Expected time to complete: 4 hours</p>
         <p class="medium yellow oswald center margin-bottom-1">Cost: $40</p>
 
-        {{/link-to}}
-        {{#link-to 'knights-of-infernal-order.paywall' class='div-center'}}
-        <button class="btn oswald">Buy Now</button>
-        {{/link-to}}
 
+        <div class="paypal-parent margin-bottom-1">
+          <p class="center medium yellow margin-bottom-1">Pay with Paypal</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="TD536GM4WKLVN">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+        </div>
+
+{{#link-to 'knights-of-infernal-order.adventure.prologue' class='link-to'}} <h1 class="yellow">prologue</h1>
+{{/link-to}}
 </div>
 
   </div>

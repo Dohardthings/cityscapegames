@@ -64,7 +64,7 @@ actions:{
     }
 
    if (!localStorage.getItem('deadline')) {
-     var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+     var deadline = new Date(Date.parse(new Date()) + 14400000);
      deadline = localStorage.setItem('deadline', deadline);
 
 
@@ -79,6 +79,9 @@ actions:{
   }
   function init() {
     setTimeout(changeColor, 14400000);
+  }
+  function reload() {
+    window.location.reload(true);
   }
 }
 }

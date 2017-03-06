@@ -674,3 +674,10 @@ border: black solid 1px;
 .bottom-pad {
   padding-bottom: 2rem;
 }
+
+.paypal-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
