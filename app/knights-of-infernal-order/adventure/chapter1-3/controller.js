@@ -32,7 +32,7 @@ export default Ember.Controller.extend({
 
     check: function(){
       var value = document.getElementById('input1').value;
-      var check = /(114)|(108)|(109)|(110)|(111)|(112)|(113)/g.test(value);
+      var check = /(166)/g.test(value);
       //check will be true or false
       if (check){
       console.log("woohoo!");

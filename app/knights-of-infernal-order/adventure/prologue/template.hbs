@@ -7,12 +7,18 @@
     <p class="big im-fell-english black center">ORDER</p>
   </div>
 
+
 <div class="profile-image-parent">
 
 <img class="image" src="/img/kgc.jpg" alt="">
 </div>
 
 <h2 class="center">Prologue</h2>
+<audio id="myAudio">
+<source src="/audio/bizarre-guitar-daniel_simon.mp3" type="audio/mp3">
+</audio>
+<button  class="btn" type="button" {{action "player"}}>Play</button>
+
 <div class="profile-image-parent">
   <img class="image" src="/img/swirly.png" alt="">
 </div>
@@ -23,7 +29,9 @@
                    the Knights of the Infernal Order sent 2 elite
                    commandos, Mr. Woodson and Mr. Howard along with
                    their chief lieutenant, Mr. Hill, into Davidson
-                   County, TN. While there, they were instructed to
+                   County, TN.
+
+                   While there, they were instructed to
                    search out, and establish contact with former
                    members of the Order's inner circle, many of
                    whom, who had infiltrated Nashville's secret
@@ -118,5 +126,6 @@ Laying the cornerstone for a second temple
 
 {{#link-to 'knights-of-infernal-order.adventure.chapter1-1'}}<button type="button" name="button" class="btn">Begin</button>
  {{/link-to}}
+
 {{outlet}}
 </div>
