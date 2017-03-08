@@ -10,6 +10,10 @@ actions: {
       myAudio.pause();
     }
   },
+  clear: function clearStorage() {
+    var doIt = localStorage.clear();
+  }
+
 }
 
 });

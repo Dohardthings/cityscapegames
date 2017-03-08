@@ -83,7 +83,10 @@ actions:{
   function reload() {
     window.location.reload(true);
   }
+  reload();
 }
-}
+},
+
+
 }
 });
