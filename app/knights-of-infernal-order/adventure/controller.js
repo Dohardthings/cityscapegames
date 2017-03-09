@@ -1,6 +1,6 @@
 import Ember from 'ember';
 export default Ember.Controller.extend({
-
+  isShowingModalRules: false,
   init: function() {
     this._super();
     Ember.run.schedule("afterRender", this, function() {
@@ -41,11 +41,14 @@ export default Ember.Controller.extend({
 
           if (t.total <= 0) {
             clearInterval(timeinterval);
+            hoursSpan.innerHTML = ('0');
+            minutesSpan.innerHTML = ('0');
+            secondsSpan.innerHTML = ('0');
           }
         }
-
         updateClock();
         var timeinterval = setInterval(updateClock, 1000);
+
       }
 
       initializeClock('clockdiv', deadline);
@@ -59,6 +62,13 @@ export default Ember.Controller.extend({
       // function init() {
       //   setTimeout(changeColor, 14400000);
       // }
-    }
+    },
+    toggleModalRules() {
+      this.toggleProperty('isShowingModalRules');
+    },
+    noClock() {
+      var clock = document.getElementById('clockdiv');
+      clock.innerHTML = '';
+    },
   }
 });

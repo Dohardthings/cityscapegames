@@ -1,7 +1,16 @@
 <div class="home-page-container">
   <div class="section-1">
     <div class="filter">
+
+
+
       <h1 class="home-page-h1"><i>LIVE THE ADVENTURE...</i></h1>
+
+      {{#link-to 'nashville-adventures' class='auto-margin'}}
+    <button class="btn im-fell-english top-corner">Play Now</button>
+    {{/link-to}}
+
+
       <div class="image-parent">
         <img class="image" src="img/logo.png" alt="">
 
@@ -143,13 +152,16 @@
       </div>
 
       <p class="adventure-blurb small im-fell-english white">Discover the secrets hiding in Nashville's Confederate past!</p>
+
+      {{#link-to 'nashville-adventures' class='auto-margin'}}
+    <button class="btn im-fell-english">Play Now</button>
+    {{/link-to}}
+
     </div>
   </div>
 
 
-  {{#link-to 'cities'}}
-<h3>Cities</h3>
-{{/link-to}}
+
 
 
   {{outlet}}
