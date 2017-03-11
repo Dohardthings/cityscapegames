@@ -43,8 +43,6 @@ export default Ember.Controller.extend({
         window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!");
 
       };
-
-
     },
   }
 });

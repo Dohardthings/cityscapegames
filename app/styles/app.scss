@@ -685,7 +685,7 @@ border: black solid 1px;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1rem;
+  margin: 1rem 2rem 1rem 1rem;
 }
 
 @media screen and (max-width: 760px) {
@@ -695,6 +695,22 @@ border: black solid 1px;
 
   }
 }
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+@media screen and (max-width: 760px) {
+  .top-left {
+    position: static;
+    margin: auto;
+
+  }
+}
+
 .nav-wrapper {
   display: flex;
   flex-direction: row;
@@ -707,4 +723,10 @@ border: black solid 1px;
 .margin-left {
   margin-left: 1rem;
   font-size: 3rem;
+}
+.black-background {
+  background: $brand-black;
+}
+.dnForm {
+  font-family: 'Im Fell English';
 }
