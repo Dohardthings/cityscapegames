@@ -1,6 +1,6 @@
 <div class="section-2 center chapter-wrapper">
 
-  <div class="profile-image-parent">
+  <div class="image-parent margin-top-bottom">
     <img class="image" src="/img/swirly.png" alt="">
   </div>
   <div class="list-div auto-margin">
@@ -25,7 +25,17 @@ Once you have arrived, please enter the day of the month that its members meet.
 
   <form class="quiz-box" {{action "check" on="submit"}} >
     <input id="input5" class="quiz-input oswald" type="text" placeholder="Enter Address">
-    <button class="btn oswald">Submit</button>
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter2-3'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
   </form>
 
 
@@ -60,15 +70,6 @@ Go to the address you found.  Surely more information can be found there.
 
 
 
-  <div class="forward-wrapper">
-    {{#link-to 'knights-of-infernal-order.adventure.chapter2-3'}}
-    <button class="btn-question medium white center oswald">Back</button>
-
-     {{/link-to}}
-
-    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
-
-  </div>
   {{#link-to 'knights-of-infernal-order.adventure.chapter2-5' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
 {{/link-to}}
 

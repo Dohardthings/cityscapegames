@@ -1,6 +1,6 @@
 <div class="section-2 center chapter-wrapper">
 
-  <div class="profile-image-parent">
+  <div class="image-parent margin-top-bottom">
     <img class="image" src="/img/swirly.png" alt="">
   </div>
   <div class="list-div auto-margin">
@@ -23,7 +23,17 @@ Incredible! According to notable western historians, the home at Fatherland Stre
 
   <form class="quiz-box" {{action "check" on="submit"}} >
     <input id="input11" class="quiz-input oswald" type="text" placeholder="Enter Color">
-    <button class="btn oswald">Submit</button>
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter4-3'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
   </form>
 
 
@@ -57,15 +67,6 @@ Don't worry about getting the exact hue correct, just tell us the general color.
 
 
 
-  <div class="forward-wrapper">
-    {{#link-to 'knights-of-infernal-order.adventure.chapter4-3'}}
-    <button class="btn-question medium white center oswald">Back</button>
-
-     {{/link-to}}
-
-    <button class="btn-question medium white center oswald"{{action "toggleModal4"}}>Hint</button>
-
-  </div>
   {{#link-to 'knights-of-infernal-order.adventure.chapter4-5' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
 {{/link-to}}
 

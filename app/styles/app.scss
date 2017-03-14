@@ -44,6 +44,7 @@ body {
   background: url('http://i.imgur.com/24VgE9T.jpg')center no-repeat no-repeat;
   background-size: cover;
 
+
 }
 
 
@@ -53,6 +54,16 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+}
+
+.index-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+
 }
 
 .image {
@@ -68,19 +79,20 @@ body {
 
 .cityscape {
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   color: $brand-yellow;
-    width: 12rem;
-    margin: auto;
-    // position: relative;
-    // bottom: 22px;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
 
 }
 
 @media screen and (min-width: 760px) {
   .cityscape {
     font-size: 5rem;
-    width: 20rem;
+    width: 90%;
+    margin-bottom: 1rem;
   }
 
 }
@@ -89,8 +101,8 @@ body {
   margin: auto;
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  color: $brand-white;
-
+  color: $brand-black;
+  text-align: center;
   font-weight: 300;
 }
 
@@ -112,6 +124,13 @@ body {
 .section-2 {
   width: 100%;
   background: $brand-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+
 }
 
 .im-fell-english {
@@ -130,9 +149,6 @@ body {
   font-size: 3rem;
   font-weight: lighter;
   margin: auto;
-  // width: 12.5rem;
-  // position: relative;
-  // top: -15px;
   margin-top: 0;
 
 }
@@ -203,7 +219,7 @@ body {
   font-family: 'Oswald', sans-serif;
   margin: auto;
   color: $brand-white;
-
+  text-align: center;
   font-weight: 300;
   font-size: 3rem;
 }
@@ -228,7 +244,7 @@ body {
   font-size: 2.75rem;
   font-weight: lighter;
   margin: auto;
-  // width: 15rem;
+  text-align: center;
   margin-top: 0;
   color: $brand-white;
 
@@ -398,6 +414,10 @@ body {
       text-shadow: grey 2px 2px;
       position: relative;
       top: 26px;
+}
+
+.register-text:hover {
+  color: white;
 }
 
 .adventure-title-parent {
@@ -643,10 +663,10 @@ border: black solid 1px;
   display: flex;
   width: 35%;
   justify-content: space-around;
-  background: $brand-white;
+  background: $brand-black;
 
   padding: 1rem;
-  color: $brand-black;
+  color: $brand-white;
   font-family: 'Im Fell English';
 }
 
@@ -716,6 +736,10 @@ border: black solid 1px;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1rem;
+  color: white;
+  background: $brand-black;
+  padding: 1rem;
+  margin: 0;
 }
 .modal-wrapper {
   width: 50%;
@@ -732,4 +756,13 @@ border: black solid 1px;
 }
 .width100 {
   width: 100%;
+}
+.no-border {
+  border: none;
+}
+.large {
+  font-size: 6rem;
+}
+.no-border {
+  border: none;
 }

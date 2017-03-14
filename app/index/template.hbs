@@ -1,37 +1,42 @@
 <div class="home-page-container">
   <div class="section-1">
     <div class="filter">
-
+      <div class="index-top-content">
 
 
       <h1 class="home-page-h1"><i>LIVE THE ADVENTURE...</i></h1>
 
-      {{#link-to 'nashville-adventures' class='auto-margin'}}
-    <button class="btn im-fell-english top-corner">Play Now</button>
-    {{/link-to}}
 
 
       <div class="image-parent">
         <img class="image" src="img/logo.png" alt="">
 
       </div>
-      <p class="cityscape">CITYSCAPE</p>
-      <form {{action "check" on="submit"}} class="top-left dnForm">
-        {{!-- <p class="center yellow">Type the code that was provided to you here.</p> --}}
-        <button class="btn">submit</button>
-        <input class="black-background yellow" type="text" placeholder="code" id="dnInput">
 
-        <p class="direction-text yellow margin-top-1 width100">Destnation Nashville visitors place code here.</p>
+      <p class="cityscape center">THE CITYSCAPE GAME</p>
 
-      </form>
 
-      <p class="number">01</p>
+
+</div>
     </div>
   </div>
 
-  <div class="section-2">
+  <div class="section-2 relative">
+
+    <form {{action "check" on="submit"}} class="top-left dnForm">
+      <button class="btn libre-baskerville">submit</button>
+      <input class="black-background white no-border" type="text" placeholder="code" id="dnInput">
+
+      <p class="direction-text black margin-top-1 width100">Destnation Nashville visitors place code here.</p>
+
+    </form>
+
+    {{#link-to 'nashville-adventures' class='auto-margin'}}
+  <button class="btn libre-baskerville top-corner">Play Now</button>
+  {{/link-to}}
 
 
+       <p class="number">01</p>
       <p class="chapter libre-baskerville center">chapter</p>
     <div class="oswald what-we-do center">What We Do</div>
 
@@ -147,10 +152,10 @@
       <div class="section-3-number">05</div>
       <p class="libre-baskerville white-chapter">chapter</p>
       <p class="oswald why-wait white center">Why Wait?</p>
-      <p class="libre-baskerville direction-text margin-bottom-1 white">We are taking submissions from adventurers, problem solvers, and competitors who are interested in playing our first adventure before we launch to the public! To register, follow the link below. You will be contacted when we begin play testing!</p>
-      <div class="idol-parent">
+      {{!-- <p class="libre-baskerville direction-text margin-bottom-1 white">We are taking submissions from adventurers, problem solvers, and competitors who are interested in playing our first adventure before we launch to the public! To register, follow the link below. You will be contacted when we begin play testing!</p> --}}
+      {{!-- <div class="idol-parent">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScEV2x0sKcyqgk6nMUNDZWVwL5S-YVM0B00EDHYWutmm7FkMA/viewform" class="register-text oswald white">REGISTER</a>
-      </div>
+      </div> --}}
       <p class="small im-fell-english white center">for</p>
       <div class="adventure-title-parent">
 
