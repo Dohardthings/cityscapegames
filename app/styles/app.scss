@@ -712,8 +712,14 @@ border: black solid 1px;
   .top-corner {
     position: static;
     margin: auto;
-
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 .top-left {
@@ -727,6 +733,9 @@ border: black solid 1px;
   .top-left {
     position: static;
     margin: auto;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
   }
 }
@@ -765,4 +774,10 @@ border: black solid 1px;
 }
 .no-border {
   border: none;
+}
+.cityscapeParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
