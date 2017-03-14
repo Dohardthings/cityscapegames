@@ -1,0 +1,86 @@
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      Unfortunately, little else can be extracted from the journal at this time as a peculiar cipher has been used to protect the secrets contained in its pages. While our cryptologists work to break the code, please investigate the location of this meeting place as quickly as possible. With a nefarious agent amongst us, we must assume that the Infernal Order is receiving the same information.
+
+    </p>
+
+    <p class="left">
+      As soon as you believe you have found the correct address, enter it below. Good luck!
+
+    </p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input1" class="quiz-input oswald" type="text" placeholder="Enter Address">
+
+
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter1-2'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn im-fell-english" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    You should look to see if Market street still exists. It’s been quite a long time since this journal entry was written.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Even though Rhea’s store hasn’t been open for business for over a century, the building itself could still be standing.
+{{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+                  Our research shows that B.S. Rhea & Sons is now known as the Rhea Building Lofts.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter1-4' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

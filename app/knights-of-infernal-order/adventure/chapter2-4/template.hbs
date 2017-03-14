@@ -1,0 +1,80 @@
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      The West Nashville Phoenix Lodge—How intriguing! This must be our next destination.
+Once you have arrived, please enter the day of the month that its members meet.
+
+    </p>
+
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input5" class="quiz-input oswald" type="text" placeholder="Enter Address">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter2-3'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Go to the address you found.  Surely more information can be found there.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    Look around at the lodge.  You won't have to go inside.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+    You ever have a mind splitting headache?  That's what you're giving me now.  How have you not gotten this yet?
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter2-5' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

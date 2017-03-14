@@ -1,0 +1,60 @@
+<div class="nav-wrapper">
+
+  <button class="black-background no-border"{{action "toggleModalRules" on="click"}}>{{fa-icon "book" class="large"}}</button>
+
+
+<div id="clockdiv">
+    <div class="center">
+      <span class="hours"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div class="center">
+      <span class="minutes center"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div class="center">
+      <span class="seconds center"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
+
+  {{!-- <button class="btn" {{action "noClock"}}>Clock</button> --}}
+  <button class="black-background no-border" {{action "noClock" on="click"}}>{{fa-icon "clock-o" class="large"}}</button>
+
+
+  {{#if isShowingModalRules}}
+    {{#modal-dialog close="toggleModalRules"
+                    targetAttachment="center"
+                    translucentOverlay=true}}
+      <p>How the game works:</p>
+      <p>KEEP THIS BROWSER WINDOW OPEN AT ALL TIMES. EXITING OUT OF THE BROWSER APP IS OK AS LONG AS THIS BROWSER WINDOW STAYS OPEN. </p>
+      <p>If you want to do the adventure at your own pace, you may permanently delete the timer by pressing the clock button</p>
+      <p>There are 5 chapters.</p>
+      <p>You will be given clues to locations around the city.</p>
+      <p>Use any legal means nessesary to find the locations, including Google.</p>
+      <p>After verifying the address, you MUST visit the locations.</p>
+      <p>Once you arrive, you will be given a clue to where a puzzle is hidden.</p>
+      <p>Your next challenge will be to find and solve the puzzle. Again, Google is your friend, and feel free to ask locals too.
+</p>
+      <p>Rinse and repeat untill you're done!</p>
+{{!-- <div class="center">
+      <p>Don’t be an A-hole! Breaking and entering, vandalism, or destruction of private property of any kind is strictly forbidden.</p>
+      <p>Please be vigilant of your surroundings AT ALL TIMES. We don’t want anyone getting hurt. That’s bad news bears for all of us!
+</p>
+      <p>Any location you will be asked to visit IS publically accessible. In the event that a puzzle is hidden inside of a business that is closed, you MUST wait until the business is open to access it.
+</p>
+      <p>If your adventure is timed, it will begin once you have reached the first chapter. If you prefer not to be timed, feel free to disable the clock.</p>
+      <p>If you are having trouble, don’t be afraid to use the hints. We might make fun of you for having to, but we won’t deduct time.
+</p>
+      <p>Seriously, don’t be an A-hole!</p>
+      <p>Please don’t ruin the adventure for others. If you find an artifact connected to the game, you are welcome to take a picture of it for later use. Then please, put it back WHERE and HOW you found it. How would you feel if you payed good money to play and couldn’t continue thanks to some joker?
+</p>
+      <p>In the event that an artifact is missing, contact us immediately and you will be promptly emailed a digital version of the artifact or puzzle.
+</p>
+      <p>Please help us keep the wonder and discovery alive for others. We ask that you not give the story away to those who haven’t played. It would be like telling someone that Han Solo dies at the end of The Force Awakens.</p> --}}
+      {{!-- </div> --}}
+    {{/modal-dialog}}
+  {{/if}}
+</div>
+{{outlet}}
+{{ember-modals}}

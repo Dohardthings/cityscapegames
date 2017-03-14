@@ -1,0 +1,783 @@
+@import 'chapter';
+@import 'decodex';
+@import 'variables';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+
+body {
+  margin: 0;
+}
+.home-page-container {
+  width:100vw;
+}
+
+
+
+.link-to {
+  text-decoration: none;
+  width: 100%;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+  .link-to {
+  font-size: 1.5rem;
+}
+}
+
+/*This is the section you see when you open the page "opening section"*/
+
+.home-page-h1 {
+  color:  $brand-white;
+  font-family: 'Oswald', sans-serif;
+  // width: 32rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.section-1 {
+  width: 100%;
+
+  background: url('http://i.imgur.com/24VgE9T.jpg')center no-repeat no-repeat;
+  background-size: cover;
+
+
+}
+
+
+.filter {
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.index-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+
+}
+
+.image {
+  max-width: 100%;
+
+}
+
+.image-parent {
+ margin: auto;
+ max-width: 30rem;
+ min-width: 15rem;
+}
+
+.cityscape {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  color: $brand-yellow;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 760px) {
+  .cityscape {
+    font-size: 5rem;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+}
+
+.number {
+  margin: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: $brand-black;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 760px) {
+  .number {
+    font-size: 5rem;
+
+  }
+
+}
+
+/*end opening section*/
+
+
+// begin section-2 *********
+
+
+
+.section-2 {
+  width: 100%;
+  background: $brand-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+
+}
+
+.im-fell-english {
+  font-family: 'Im fell English';
+}
+
+.libre-baskerville {
+  font-family: 'Libre Baskerville';
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.what-we-do {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: auto;
+  margin-top: 0;
+
+}
+
+.chapter {
+  position: relative;
+  top:-2px;
+  margin: auto;
+  width: 14rem;
+  color: $brand-black;
+  font-size: 2rem;
+}
+
+.description {
+  display: flex;
+
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.flex-row-container {
+  width: 100%;
+  display:flex;
+  flex-direction: column-reverse;
+}
+.equation-container {
+  display: flex;
+  width: 100%;
+
+}
+.equation-image-parent {
+  width: 30%;
+  margin: auto;
+}
+@media screen and (min-width: 760px) {
+  .equation-container {
+    margin: auto;
+    width: 70%;
+  }
+
+  .equation-image-parent {
+    width: 20%;
+  }
+}
+
+
+
+.equation-symbol-parent {
+  width: 5%;
+  margin: auto;
+}
+
+// end section-2 **********
+
+
+// begin section-3*********
+
+.section-3 {
+  width: 100%;
+  background: url('http://i.imgur.com/zZfrPTI.jpg')center center no-repeat;
+  background-size: cover;
+
+}
+
+.section-3-number {
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+  color: $brand-white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 760px) {
+  .section-3-number {
+    font-size: 5rem;
+
+  }
+
+}
+
+.white-chapter {
+  margin: auto;
+  width: 8rem;
+  color: $brand-white;
+  font-size: 2rem;
+
+}
+
+.how-it-works {
+  font-size: 2.75rem;
+  font-weight: lighter;
+  margin: auto;
+  text-align: center;
+  margin-top: 0;
+  color: $brand-white;
+
+
+}
+
+.direction {
+  width: 100%;
+  margin-bottom: 2rem;
+
+}
+
+.direction-image-parent {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 1rem;
+
+}
+@media screen and (min-width: 760px) {
+  .direction-image-parent {
+    width: 15%;
+  }
+  }
+
+
+.direction-text {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  width:90%;
+}
+
+.white {
+  color: $brand-white
+}
+
+//  end section-3*******************
+
+
+//  begin section-4******************
+
+.section-4 {
+  width: 100%;
+  background: $brand-black;
+}
+
+.where-and-when {
+  font-size: 2.75rem;
+  font-weight: lighter;
+  margin: auto;
+  // width: 13.8rem;
+  margin-top: 0;
+  color: $brand-white
+
+}
+
+.yellow {
+  color: $brand-yellow;
+}
+
+.flex-qa-container {
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.skyline {
+  width: 100%;
+  margin: auto;
+
+}
+
+// end section-4 **********************************
+
+
+// Begin section-5  *******************************
+
+.section-5 {
+  width: 100%;
+  background: $brand-white;
+
+}
+
+.who-we-are {
+  font-size: 2.75rem;
+  font-weight: lighter;
+  margin: auto;
+  // width: 11.3rem;
+  margin-top: 0;
+
+}
+
+.black {
+  color: $brand-black;
+}
+
+
+.profile-container {
+  width: 100%;
+}
+.profile-image-parent {
+  width: 20rem;
+  min-width: 5rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.make-dimentions-match {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-weight: 350;
+  margin: auto;
+  margin-top: 1rem;
+  width: 17.16rem;
+  // position: relative;
+  // bottom: 27px;
+}
+
+// end section-5 ************************
+
+
+//  begin section-6 *****************************
+
+.section-6 {
+  width: 100%;
+  background: url('http://i.imgur.com/gP49p4w.jpg')center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.why-wait {
+  font-size: 2.75rem;
+  font-weight: lighter;
+  margin: auto;
+  // width: 10.1rem;
+  margin-top: 0;
+
+}
+
+.idol-parent {
+  display: flex;
+  margin: auto;
+  min-height: 15rem;
+  width: 15rem;
+  background: url('http://i.imgur.com/AeYF3ab.png')center center no-repeat;
+  background-size: cover;
+}
+
+.register-text {
+  font-weight: bold;
+      font-size: 3rem;
+      margin: auto;
+      filter: drop-shadow(0px 0px 5px black);
+      text-shadow: grey 2px 2px;
+      position: relative;
+      top: 26px;
+}
+
+.register-text:hover {
+  color: white;
+}
+
+.adventure-title-parent {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.very-small {
+  font-size: .8rem;
+}
+
+.smaller {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.medium-2 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+.medium {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.big {
+  font-size: 3.8rem;
+  margin: 0;
+}
+
+.bigger {
+  font-size: 5.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.adventure-blurb {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+
+// extra stuff for cities page****************************************
+
+
+.margin-top-bottom {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.back-button {
+  border-radius: 20%;
+  background: $brand-yellow;
+  color: $brand-black;
+  width: 5rem;
+  margin-top: 1.5rem;
+  padding: .4rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+
+  &:hover {
+    text-shadow: white 1px 1px;
+  }
+}
+
+
+.city-link {
+  transition:all .5s ease;
+  outline:none;
+  box-shadow: 5px 38px 34px -26px $brand-white;
+  // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  // border:solid 7px $brand-yellow;
+  &:hover{
+         box-shadow:2px 8px 4px -6px $brand-white;
+         color: $brand-white;
+      }
+}
+
+
+
+ .full-page {
+   min-height: 100vh;
+ }
+
+.nashville {
+  // background: url('http://www.blacklightslide.com/wp-content/uploads/2016/10/nashvillelarge.jpg')center center no-repeat;
+  // background-size: cover;
+  text-shadow: black 2px 2px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  &:hover {
+    text-shadow: grey 2px 2px;
+  }
+}
+
+.goonies-map {
+  // background: url('https://s-media-cache-ak0.pinimg.com/originals/ce/d1/60/ced1606db67afeafd08f56e87c984d85.jpg')center center no-repeat;
+  // background-size: cover;
+  text-shadow: black 2px 2px;
+}
+.no-margin {
+  margin: 0;
+}
+
+// END CITIES PAGE ********************************************************
+
+// BEGIN ADVENTURES PAGE FOR NASHVILLE ************************************
+
+
+.hover-shadow {
+
+  &:hover {
+    filter: drop-shadow(10px 10px 10px red);
+  }
+}
+
+.div-center {
+  display: flex;
+  align-self: center;
+}
+
+.width90 {
+  width: 90%;
+}
+
+.green {
+  color: lightgreen;
+}
+
+ // END NASHVILLE PAGE *******************************************************
+ //
+ // BEGIN RULES PAGE *************************************************************
+
+
+ .margin-bottom-1 {
+   margin-bottom: 1.5rem;
+ }
+
+.left {
+  text-align: left;
+}
+
+.list-div {
+  width: 90%;
+}
+
+.border-white {
+  border: white solid 1px;
+}
+.auto-margin {
+  margin: auto;
+}
+
+// End Rules *********************************
+//
+// BEGIN CHAPTERS******************************
+
+.link-to-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lime {
+  color: lime;
+}
+.next {
+  width: 24%;
+  margin:auto;
+  font-size: 3rem;
+}
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.next-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.decodex-back {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 1rem;
+
+}
+.quiz-box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.quiz-input {
+width: 70%;
+margin: auto;
+font-size: 2rem;
+margin-bottom: 1rem;
+border: black solid 1px;
+}
+
+.forward-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forward {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#clockdiv {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  background: $brand-black;
+
+  padding: 1rem;
+  color: $brand-white;
+  font-family: 'Im Fell English';
+}
+
+
+.hours {
+  font-size: 2rem;
+}
+
+.smalltext {
+  font-size: 1rem;
+}
+
+.minutes {
+  font-size: 2rem;
+}
+
+.smalltext {
+  font-size: 1rem;
+}
+
+.seconds {
+  font-size: 2rem;
+}
+
+.bottom-pad {
+  padding-bottom: 2rem;
+}
+
+.paypal-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+@media screen and (max-width: 760px) {
+  .top-corner {
+    position: static;
+    margin: auto;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+@media screen and (max-width: 760px) {
+  .top-left {
+    position: static;
+    margin: auto;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+  color: white;
+  background: $brand-black;
+  padding: 1rem;
+  margin: 0;
+}
+.modal-wrapper {
+  width: 50%;
+}
+.margin-left {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+.black-background {
+  background: $brand-black;
+}
+.dnForm {
+  font-family: 'Im Fell English';
+}
+.width100 {
+  width: 100%;
+}
+.no-border {
+  border: none;
+}
+.large {
+  font-size: 6rem;
+}
+.no-border {
+  border: none;
+}
+.cityscapeParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

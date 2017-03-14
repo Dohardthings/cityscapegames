@@ -1,0 +1,87 @@
+.chapter-wrapper {
+  font-family: "Im fell English";
+  font-size: 18px;
+}
+
+.knights {
+  font-size: 5rem;
+}
+
+.infernal {
+  font-size: 4.25rem;
+}
+
+.order {
+  font-size: 6.25rem;
+}
+
+
+
+h3 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.east-park {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 30rem;
+  position: absolute;
+  transition: .5s 0s ease;
+}
+
+.top:hover {
+  opacity: 0;
+}
+
+.btn {
+  color: white;
+  font-size: 3rem;
+  background:black;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+.btn-silver {
+  color: black;
+  font-size: 2rem;
+  background-image:linear-gradient(120deg, silver, white, silver, silver);
+  border-radius: 5px;
+  padding: 0;
+
+}
+
+
+.good-decision {
+  padding: 10px 75px;
+  margin-top: 50px;
+}
+
+.trove {
+  padding: 10px 75px;
+  margin-top: 75px;
+}
+
+.oath {
+  font-weight: bold;
+  font-style: italic;
+}
+.circle {
+  border-radius: 50%;
+}
+
+.btn-question {
+  background: black;
+  border: none;
+}
+.btn:hover {
+  color: white;
+}
+.btn:active {
+  color: black;
+  background: white;
+  border: black 2px solid;
+}

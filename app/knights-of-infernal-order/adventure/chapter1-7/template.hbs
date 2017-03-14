@@ -1,0 +1,80 @@
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+Follow the directions in the journal to find the saloon where this mysterious framed man and his disordered letters reside. Once you have decoded his hidden message, enter the answer below.
+    </p>
+
+    <p class="left">
+      Do so with haste, for the time of suspicions is over. We've intercepted chatter from the Infernal Order—with the assistance of their double agent, they've identified your location!
+    </p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input3" class="quiz-input oswald" type="text" placeholder="Enter Answer">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter1-6'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+                  In the earlier journal entry, Woodson mentioned that they would “walk down to the corner”. The saloon must be located on this very block.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+It could be that “a man was framed up the winding stairs” refers to a picture.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Disordered letters would most certainly point to the message being anagram.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter2-1' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

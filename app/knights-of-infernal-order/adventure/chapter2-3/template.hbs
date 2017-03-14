@@ -1,0 +1,80 @@
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+What an interesting turn of events! According to Mr. Eastman’s diary, not only were the Knights discovered due to a drunken rant by Mr. Hill, but it looks as if Mr. Woodson’s true name was James. The plot thickens by the very moment!     </p>
+
+<p class="left">We must concentrate on the solution to the anagram as we believe it reveals the location of the Temple mentioned in Mr. Eastman’s memoir.
+</p>
+<p class="left">
+  Research the solution further, and when you feel you have discovered its location, please enter the address below.
+
+</p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input4" class="quiz-input oswald" type="text" placeholder="Enter Address">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter2-2'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Based off of Woodson’s anagram, you should be searching for a Freemason’s lodge in West Nashville.  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Try to look for a lodge that might have a connection to the information we already we possess.  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Our research shows that you should search for the West Nashville Phoenix Lodge.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter2-4' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

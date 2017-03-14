@@ -1,0 +1,77 @@
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+Incredible! According to notable western historians, the home at Fatherland Street housed Jesse James shortly after the Northfield Bank robbery in 1876, until the day after Bill Ryan was captured in the White's Creek area in 1881. During this period, Jesse used the name, “J.D. Howard,” which means our Mr. Woodson must have been his brother, Frank James!    </p>
+
+<p class="left">Quickly make your way to the James’ former house to see what other clues might be around there. When you arrive, please enter the color of the residence on the left.
+</p>
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input11" class="quiz-input oswald" type="text" placeholder="Enter Color">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter4-3'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+  It's not grey.  So if you're color blind, just ask someone walking down the street.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Stand directly in front of Jesse's house and face it.  It's the building right there to your left.  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Don't worry about getting the exact hue correct, just tell us the general color.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter4-5' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

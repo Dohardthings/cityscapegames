@@ -1,0 +1,90 @@
+
+
+<div class="section-2 center chapter-wrapper">
+  <h2 class="center">Final Chapter</h2>
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+      You have achieved a great undertaking by making it this far in your mission, but it is here that we must part. For it is only you that can complete the rest of this journey. I apologize for not revealing the whole truth earlier, but we needed to be certain of your abilities before we lifted you out of the darkness. Now that you have demonstrated your skills, I am obliged to tell you that you are under no immediate threat from the Infernal Order. This cloak and dagger ruse was enacted to disguise the true aim of this expedition.
+    </p>
+    <p class="left">It was not by chance, but by design, that you took part in this “game” as every candidate for knighthood must prove him or herself worthy to be initiated into their Order. Your house has long been intertwined with the Order of the Sun—our mutual acquaintance is of your kin, and it is you that has been nominated.
+</p>
+
+    <p class="left">Yet, you inherit a heavy decision. For though you hold a rightful place at our table, this does not mean you hold righteousness in your heart. You have been led to this place as a test of your honor for the treasure is only mere steps away. Once you discover its final resting place, will you join our Order and leave it protected deep under the Temple of the Sun? Or will you choose to reveal her secrets and steal the riches we have guarded for so long? If your decision lands upon the latter, you forfeit your position within our brotherhood, but you will not be stopped.
+</p>
+
+                <p class="left">
+                  Your final test is to locate the Temple of the Sun and enter the name by which the uninitiated continue to call it. If you successfully complete your task, you will then be asked to make your decision.
+</p>
+
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input13" class="quiz-input oswald" type="text" placeholder="Impress me">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter4-7'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+I am sorry, but you are on your own now.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+I can't help you with this, but you already have everything you need anyway...
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+Good luck.  I hope you make it.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter5-2' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}

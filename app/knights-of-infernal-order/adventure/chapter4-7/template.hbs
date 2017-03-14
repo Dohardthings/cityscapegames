@@ -1,0 +1,99 @@
+
+<div class="section-2 center chapter-wrapper">
+
+  <div class="image-parent margin-top-bottom">
+    <img class="image" src="/img/swirly.png" alt="">
+  </div>
+  <div class="list-div auto-margin">
+    <p class="left">Friend,</p>
+
+    <p class="left">
+We haven't much time! We just intercepted a transmission that the Infernal Order sent to their mole inside our organization. Included in that message was the image below. If you tap the photograph for a closer examination, you will see what looks to be a cornerstone like the one mentioned in the Jesse James key.     </p>
+</div>
+
+<div class="image-parent east-park">
+                  <div class="top">
+                      <img class="image" src="/img/EPbottom.png" alt="Picture of a memorial plaque.">
+                  </div>
+                  <div class="bottom">
+                    <img class="image" src="/img/EPtop.png" alt="Picture of a memorial plaque that has been digitally enhanced.">
+                  </div>
+                </div>
+
+                <div class="list-div auto-margin">
+                  <p class="left">Our researchers have combed through the archives and referenced the same location using a historical photograph taken from a bell tower. By superimposing the two photographs, they are able to give us a clue as to what stood there before the great Edgefield fire. Take note of the cornerstone’s location at the bottom left of the image.</p>
+                </div>
+
+        <div class="image-parent east-park margin-bottom-1">
+          <img src="/img/EPsuper.jpg" class="image" alt="">
+        </div>
+
+<div class="list-div auto-margin">
+<p class="left">You must uncover the meaning of this final clue and make your way to the location. Once you have found the engraved cornerstone, enter the inscription below. But be vigilant—the men you are about to meet are dangerous. Their treachery knows no bounds!
+</p>
+
+    <p class="left">
+      Sincerely,
+    </p>
+    <p class="left">
+      Q.
+    </p>
+
+  </div>
+
+
+  <form class="quiz-box" {{action "check" on="submit"}} >
+    <input id="input12" class="quiz-input oswald" type="text" placeholder="Enter Answer">
+    <div class="forward-wrapper">
+      {{#link-to 'knights-of-infernal-order.adventure.chapter4-6'}}
+      <button class="btn medium white center oswald">Back</button>
+
+       {{/link-to}}
+       <button class="btn libre-baskerville" type="submit">Submit</button>
+
+      <button class="btn medium white center oswald"{{action "toggleModal4"}}>Hint</button>
+
+    </div>
+
+  </form>
+
+
+
+
+
+
+
+{{#if isShowingModal}}
+  {{#modal-dialog close="toggleModal"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+The strange symbol at the end of the first set of numbers listed reminds me of a navigation symbol, like one found on a compass.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal2}}
+  {{#modal-dialog close="toggleModal2"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+If Jesse is attempting to navigate us to the location, he must have included a clue as to the distance that should be traveled.
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingModal3}}
+  {{#modal-dialog close="toggleModal3"
+                  targetAttachment="center"
+                  translucentOverlay=true}}
+The boldest engraving on the stone would most likely be the most important.
+  {{/modal-dialog}}
+{{/if}}
+
+
+
+  {{#link-to 'knights-of-infernal-order.adventure.chapter5-1' class="forward"}}   {{fa-icon "fa-caret-right" class= "bigger black"}}
+{{/link-to}}
+
+  </div>
+
+
+{{outlet}}
+{{ember-modals}}
