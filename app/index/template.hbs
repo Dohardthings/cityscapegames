@@ -1,4 +1,8 @@
 <div class="home-page-container">
+  {{!-- <div class="seperator-top">
+    <p class="oswald yellow small margin-right-1">Destination Nashville customers click</p>
+    <button class="btn-yellow">Here</button>
+  </div> --}}
   <div class="section-1">
     <div class="filter">
       <div class="index-top-content">
@@ -20,20 +24,22 @@
 </div>
     </div>
   </div>
-
+  <div class="seperator">
+    {{#link-to 'knights-of-infernal-order.rules' class='auto-margin align-self-center'}}
+    <button class="btn-yellow oswald medium">PLAY NOW</button>
+    {{/link-to}}
+</div>
   <div class="section-2 relative">
 
-    <form {{action "check" on="submit"}} class="top-left dnForm">
-      <button class="btn libre-baskerville">submit</button>
+    {{!-- <form {{action "check" on="submit"}} class="top-left dnForm">
+      <div class="dnFormChild">
+      <button class="btn libre-baskerville smaller">submit</button>
       <input class="black-background white no-border" type="text" placeholder="code" id="dnInput">
-
+      </div>
       <p class="direction-text black margin-top-1 width100">Destnation Nashville visitors place code here.</p>
 
-    </form>
+    </form> --}}
 
-    {{#link-to 'nashville-adventures' class='auto-margin align-self-center'}}
-  <button class="btn libre-baskerville top-corner">Play Now</button>
-  {{/link-to}}
 
 
        <p class="number">01</p>
@@ -168,7 +174,7 @@
       <p class="adventure-blurb small im-fell-english white">Discover the secrets hiding in Nashville's Confederate past!</p>
 
       {{#link-to 'nashville-adventures' class='auto-margin'}}
-    <button class="btn im-fell-english">Play Now</button>
+      <button class="btn-yellow oswald medium">PLAY NOW</button>
     {{/link-to}}
 
     </div>
