@@ -314,7 +314,14 @@ body {
   margin: auto;
 }
 
+.direction-text-2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
 
+}
 .skyline {
   width: 100%;
   margin: auto;
@@ -367,11 +374,11 @@ body {
 }
 
 .profile-name {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 350;
   margin: auto;
   margin-top: 1rem;
-  width: 17.16rem;
+  text-align: center;
   // position: relative;
   // bottom: 27px;
 }
@@ -856,10 +863,30 @@ border: black solid 1px;
 .margin-top-2 {
   margin-top: 2rem;
 }
+.margin-top-3 {
+  margin-top: 4rem;
+}
 .margin-right-1 {
   margin-right: 1rem;
 }
 .align-fix {
   align-self: flex-start;
     margin-left: 6rem;
+}
+@media screen and (max-width: 760px){
+.phone-play-now {
+  display: static;
+}
+.laptop-play-now {
+  display: none;
+}
+}
+
+@media screen and (min-width: 760px){
+.phone-play-now {
+  display: none;
+}
+.laptop-play-now {
+  display: static;
+}
 }
