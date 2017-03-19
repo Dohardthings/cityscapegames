@@ -23,15 +23,15 @@
 
 
   <form class="quiz-box" {{action "check" on="submit"}} >
-    <input id="input2" class="quiz-input oswald" type="text" placeholder="Enter Address">
+    <input id="input2" class="quiz-input oswald" type="text" placeholder="Enter Answer">
     <div class="forward-wrapper">
       {{#link-to 'knights-of-infernal-order.adventure.chapter1-3'}}
-      <button class="btn medium white center im-fell-english">Back</button>
+      <button class="btn medium white center im-fell-english padding-rl-2">Back</button>
 
        {{/link-to}}
        <button class="btn im-fell-english" type="submit">Submit</button>
 
-      <button class="btn medium white center im-fell-english"{{action "toggleModal4"}}>Hint</button>
+      {{!-- <button class="btn medium white center im-fell-english"{{action "toggleModal4"}}>Hint</button> --}}
 
     </div>
 

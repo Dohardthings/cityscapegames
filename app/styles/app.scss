@@ -600,6 +600,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+.button-wrapper-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .lime {
   color: lime;
@@ -889,4 +894,21 @@ border: black solid 1px;
 .laptop-play-now {
   display: static;
 }
+}
+.kgc-image-parent {
+  width: 100%;
+}
+.heavy {
+  font-weight: 600;
+}
+.padding-rl-3 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+.padding-rl-toMatchSubmit {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.margin-bottom-2ish {
+  margin-bottom: 2.5rem;
 }
