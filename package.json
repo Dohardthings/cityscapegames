@@ -13,7 +13,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "deploy": "ember build && cp dist/index.html dist/200.html && surge dist goofy-shoes.surge.sh"
+    "deploy": "ember build && cp dist/index.html dist/200.html && surge dist http://www.thecityscapegame.com"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
