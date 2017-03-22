@@ -55,6 +55,7 @@ Router.map(function() {
   });
   this.route('we-will-contact-you');
   this.route('use-your-phone');
+  this.route('beta-test');
 });
 
 export default Router;
