@@ -56,8 +56,12 @@ But the sons of men, whose fangs are spears and arrows and their tongue a sharp 
 <p class="left">Grand Commander of the Order of the Sun</p>
 </div>
 
-<div class="link-to-wrapper">
+{{!-- <div class="link-to-wrapper">
 {{#link-to 'we-will-contact-you'}} <button type="button" name="button" class="btn margin-bottom-1 im-fell-english">Our Thanks</button> {{/link-to}}
+</div> --}}
+
+<div class="link-to-wrapper">
+ <button {{action 'foo' on= 'click'}} type="button" name="button" class="btn margin-bottom-1 im-fell-english ourthanks">Our Thanks</button>
 </div>
 
 </div>

@@ -52,6 +52,7 @@ Router.map(function() {
       this.route('epilogue-2');
       this.route('epilogue-1');
     });
+    this.route('justintime');
   });
   this.route('we-will-contact-you');
   this.route('use-your-phone');
