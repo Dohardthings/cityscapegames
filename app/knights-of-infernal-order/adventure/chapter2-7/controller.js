@@ -35,14 +35,12 @@ export default Ember.Controller.extend({
       var check = /(centre star)|(Centre Star)|(Centre star)/g.test(value);
       //check will be true or false
       if (check){
-      console.log("woohoo!");
       this.transitionToRoute('knights-of-infernal-order.adventure.chapter3-1');
       }
       if (!check){
-        console.log("fuuuuck!");
         window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!");
 
-      };
+      }
 
 
     },

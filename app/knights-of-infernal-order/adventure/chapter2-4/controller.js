@@ -32,17 +32,15 @@ export default Ember.Controller.extend({
 
     check: function(){
       var value = document.getElementById('input5').value;
-      var check = /(2nd)|(second)|(Second)/g.test(value);
+      var check = /(1864)/g.test(value);
       //check will be true or false
       if (check){
-      console.log("woohoo!");
       this.transitionToRoute('knights-of-infernal-order.adventure.chapter2-5');
       }
       if (!check){
-        console.log("fuuuuck!");
         window.alert("Nope!  You haven't got it yet! Keep Researching or try a hint!");
 
-      };
+      }
 
 
     },

@@ -23,8 +23,12 @@
 </div>
 
 <div class="link-to-wrapper">
- <button {{action 'foo' on= 'click'}} type="button" name="button" class="btn margin-bottom-1 im-fell-english ourthanks">Our Thanks</button>
+{{#link-to 'knights-of-infernal-order.justintime'}} <button type="button" name="button" class="btn margin-bottom-1 im-fell-english">Our Thanks</button> {{/link-to}}
 </div>
+
+{{!-- <div class="link-to-wrapper">
+ <button {{action 'foo' on= 'click'}} type="button" name="button" class="btn margin-bottom-1 im-fell-english ourthanks">Our Thanks</button>
+</div> --}}
 
 </div>
 {{outlet}}
