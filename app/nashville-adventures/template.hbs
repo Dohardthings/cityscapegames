@@ -26,13 +26,21 @@
             <p class="small black libre-baskerville center">Smart Phone</p>
             <p class="small black libre-baskerville center">Expected time to complete: 4 hours</p>
             <p class="small black libre-baskerville center margin-bottom-1">Max distance from downtown: 13.2 miles</p>
+            <p class="medium red oswald center margin-top-2">Regular Price: $40</p>
 
-            <p class="medium black oswald center margin-bottom-1 margin-top-2">Cost: $40</p>
+            <p class="medium black oswald center margin-bottom-1">Your Cost: $20</p>
 
 
           <div class="paypal-parent margin-bottom-1">
             <p class="center oswald small black">Pay with Paypal</p>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            {{!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="TD536GM4WKLVN">
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form> --}}
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick">
   <input type="hidden" name="hosted_button_id" value="TD536GM4WKLVN">
   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
